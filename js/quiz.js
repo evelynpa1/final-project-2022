@@ -26,7 +26,7 @@ const quiz_sheet = {
     },
     3 : {
         "question": "What is your zodiac sign?",
-        "answers": ['Aquarius/Pisces', 'Aries/Taurus', 'Gemini/Cancer', 'Leo/Virgo', 'Libra/Scorpio', 'Sagittarius/Capricorn'],
+        "answers": ['Aquarius or Pisces', 'Aries or Taurus', 'Gemini or Cancer', 'Leo or Virgo', 'Libra or Scorpio', 'Sagittarius or Capricorn'],
         "points": [1,0,3,2,4,5]
     },
     4 : {

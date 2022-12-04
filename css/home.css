@@ -25,7 +25,7 @@
     transform: scale(1.1);
 }
 #result_back::before {
-    background-size: auto;
+    background-size: contain;
 }
 #question_wrapper , #result_back{
     background-color: black;
@@ -141,18 +141,17 @@ div.disabled, div.disabled:hover {
         min-height: 150px;
     }
     #question {
-        font-size: 50px;
+        font-size: 100%;
         line-height: 50px;
     }
     .choice{
         flex-basis: calc(50% - 5px);
         height: 100px;
-        line-height: 60px;
-        font-size: 30px;
+        font-size: 3vw;
     }
     .control_button {
         height: 75px;
-        line-height: 35px;
+        /* line-height: 35px; */
         font-size: 30px;
     }
 }
@@ -167,6 +166,6 @@ div.disabled, div.disabled:hover {
     }
     .choice {
         flex-basis: calc(33.3333333333329% - 10px);
-        font-size: 20pt;
+        font-size: 2vw;
     }
 }
