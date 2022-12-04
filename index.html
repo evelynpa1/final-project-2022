@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="images/icon.png" sizes="32x32"> <!--https://keroppirecippi.wordpress.com/-->
+    <title>Home</title>
+</head>
+<body onload="onload()">
+    <a class="skip" tabindex="0" href="#main">Skip To Main Content</a>
+    <header>
+        <nav>
+            <div class="logo_wrapper"><img src="images/icon.png" alt="keroppi logo"> <!--https://keroppirecippi.wordpress.com/--> </div>
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "about_me.html">About Me</a></li>
+                <li><a href = "tier_list.html">Tier List</a></li>
+            </ul>
+        </nav>
+        <div id="cover"> <!--https://cutewallpaper.org/21/cute-keroppi-wallpaper/Download-Gambar-Wallpaper-Keroppi-Kumpulan-Wallpaper.html-->
+            <h1>Home</h1>
+        </div>
+
+    </header>
+    
+    <main id="main">
+        <div class="introduction">Hello! Welcome to my website!<br><br>Take the quiz below to find out which Sanrio character you are, and make sure to check out the "About Me" and "Tier List" pages! </div>
+        <div id="form_wrapper">
+            <div id="question_wrapper"> <!--https://tenor.com/view/hello-kitty-huh-question-cartoon-text-gif-9070365-->
+                <span id="question"></span>
+            </div>
+            <div id="answers_wrapper">
+                <div class="choice" id="choice_1" onclick="select(1)" tabindex="0"></div>
+                <div class="choice" id="choice_2" onclick="select(2)" tabindex="0"></div>
+                <div class="choice" id="choice_3" onclick="select(3)" tabindex="0"></div>
+                <div class="choice" id="choice_4" onclick="select(4)" tabindex="0"></div>
+                <div class="choice" id="choice_5" onclick="select(5)" tabindex="0"></div>
+                <div class="choice" id="choice_6" onclick="select(6)" tabindex="0"></div>
+            </div>
+            <div id="controls_wrapper">
+                <div class = "control_button" id="prev" tabindex="0" onclick="prev()">Back</div>
+                <div class = "control_button" id="next" tabindex="0" onclick="next()">Next</div>
+            </div>
+        </div>
+        <div id="result_wrapper" class="hidden">
+            <div id="result_back"> <!--https://tenor.com/view/hello-kitty-huh-question-cartoon-text-gif-9070365-->
+                <span id="result"></span>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/quiz.js"></script>
+    
+</body>
+<footer>
+    This site was made by Evelyn for her SI339 class.<br>
+</footer>
+</html>

@@ -1,0 +1,175 @@
+.about-me {
+    display: grid;
+    background-color: #d9e247;
+    background-image: radial-gradient(white 15%, transparent 16%),
+    radial-gradient(white 15%, transparent 16%);
+    background-size: 120px 120px;
+    background-position: 0 0, 60px 60px;
+    padding: 50px 0px;
+    border: 15px solid #75b722;
+    border-radius: 25px;
+    grid-template-columns: repeat(7, 1fr);  
+    grid-template-rows: repeat(16, 1fr);
+    row-gap: 50px;
+}
+.about-me * {
+    grid-column: 2 / 6;
+    font-family: 'Patrick Hand';
+    font-size: 20pt;
+    text-align: center;
+    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
+}
+.about-me *:nth-child(2n){
+    grid-column: 3 / 7;
+}
+.about-me img {
+    box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+    transition: 250ms;
+    background-color: white;
+
+}
+.about-me img:hover, .about-me img:focus-visible {
+    transform: scale(2);
+}
+.about-me div {
+    box-shadow: 0px 20px 10px rgba(0,0,0,.2);
+    display:table;
+}
+.about-me div span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+.red {
+    background: linear-gradient(180deg, rgba(221,181,181,1) 0%, rgba(255,205,205,1) 17%, rgba(255,205,205,1) 97%);
+}
+.orange {
+    background: linear-gradient(180deg, rgba(221,206,181,1) 0%, rgba(255,236,205,1) 17%, rgba(255,236,205,1) 97%);
+}
+.yellow {
+    background: linear-gradient(180deg, rgba(220,221,181,1) 0%, rgba(254,255,205,1) 17%, rgba(254,255,205,1) 97%);
+}
+.green {
+    background: linear-gradient(180deg, rgba(184,221,181,1) 0%, rgba(209,255,205,1) 17%, rgba(209,255,205,1) 97%);
+}
+.blue {
+    background: linear-gradient(180deg, rgba(181,221,220,1) 0%, rgba(205,255,253,1) 17%, rgba(205,255,253,1) 97%);
+}
+.purple {
+    background: linear-gradient(180deg, rgba(203,181,221,1) 0%, rgba(232,205,255,1) 17%, rgba(232,205,255,1) 97%);
+}
+
+@media screen and (min-width:500px) {
+    .about-me {
+        grid-template-columns: 1fr 5fr 2fr 5fr 1fr;
+        row-gap: 70px;
+        grid-template-rows: repeat(17, 1fr);
+    }
+    .about-me * {
+        grid-column: 2;
+        grid-row: span 2;
+    }
+    .about-me *:nth-child(2){
+        grid-row: 2/4;
+    }
+    .about-me *:nth-child(2n){
+        grid-column: 4;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .about-me {
+        padding: 0px;
+        grid-template-columns: repeat(40,1fr);
+        grid-template-rows: repeat(47,1fr);
+        gap: 0px;
+        aspect-ratio: 40/47;
+        margin: 20px 20px 0px;
+    }
+    .about-me * {
+        font-size: 15pt;
+    }
+    #evelyn-note {
+        grid-area: 4 / 4 / span 6 / span 6;
+    }
+    #evelyn-pic {
+        grid-area: 7 / 11 / span 6 / span 6;
+    }
+    #pets-note {
+        grid-area: 17 / 12 / span 6 / span 6;
+    }
+    #cat1-pic {
+        grid-area: 19 / 4 / span 6 / span 6;
+    }
+    #cat2-pic {
+        grid-area: 25 / 11 / span 6 / span 6;
+    }
+    #chinchilla-pic {
+        grid-area: 21 / 19 / span 6 / span 6;
+    }
+    #keroppi-note {
+        grid-area: 6 / 23 / span 6 / span 6;
+    }
+    #keroppi-pic {
+        grid-area: 6 / 30 / span 6 / span 6;
+    }
+    #haunter-note {
+        grid-area: 16 /31 / span 6 / span 6;
+    }
+    #haunter-pic {
+        grid-area: 23 / 31 / span 6 / span 6;
+    }
+    #chainsaw-note {
+        grid-area: 36 / 5 / span 6 / span 6;
+    }
+    #chainsaw-pic {
+        grid-area: 38 / 12 / span 6 / span 6;
+    }
+    #gorillaz-note {
+        grid-area: 30 / 22 / span 6 / span 6;
+    }
+    #gorillaz-pic {
+        grid-area: 37 / 22 / span 6 / span 6;
+    }
+    #layton-note {
+        grid-area: 32 / 32 / span 6 / span 6;
+    }
+    #layton-pic {
+        grid-area: 39 / 32 / span 6 / span 6;
+    }
+}
+@media screen and (min-width:1300px) {
+    .about-me {
+        grid-template-columns: repeat(60,1fr);
+        grid-template-rows: repeat(33,1fr);
+        aspect-ratio: 60/33;
+    }
+    .about-me * {
+        font-size: 17pt;
+    }
+    #chainsaw-note {
+        grid-area: 4 / 41 / span 6 / span 6;
+    }
+    #chainsaw-pic {
+        grid-area: 11 / 42 / span 6 / span 6;
+    }
+    #gorillaz-note {
+        grid-area: 9 / 52 / span 6 / span 6;
+    }
+    #gorillaz-pic {
+        grid-area: 16 / 51 / span 6 / span 6;
+    }
+    #layton-note {
+        grid-area: 24 / 41 / span 6 / span 6;
+    }
+    #layton-pic {
+        grid-area: 25 / 48 / span 6 / span 6;
+    }
+}
+@media (prefers-reduced-motion) {
+    .about-me img {
+        transition: 0s;
+    }
+}
