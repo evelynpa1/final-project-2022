@@ -1,5 +1,5 @@
 
-#tier_list {
+#tier-list {
     background-color: #75b722;
     padding: 15px;
     border-radius: 10px;
@@ -97,7 +97,7 @@
     .tier {
         break-inside: avoid;
     }
-    .img-wrapper, .tier, #tier_list{
+    .img-wrapper, .tier, #tier-list{
         border: solid 2px black;
     }
     .letter {

@@ -123,7 +123,7 @@ div.disabled, div.disabled:hover {
     background-image: url("../images/tuxedosam.png");
 }
 #result_back.kitty::before {
-    background-image: url("../images/hello_kitty.png");
+    background-image: url("../images/hello-kitty.png");
 }
 #result_back.kuro::before {
     background-image: url("../images/kuromi.png");
