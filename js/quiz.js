@@ -35,9 +35,9 @@ const quiz_sheet = {
         "points": [5,4,0,1,2,3]
     },
     5 : {
-        "question": "What is your favorite animal?",
-        "answers": ['Cat', 'Dog', 'Frog', 'Penguin', 'Egg', 'Bunny'],
-        "points": [3,0,1,2,5,4]
+        "question": "What superpower would you want?",
+        "answers": ['Pure Power', 'Shapeshifting', 'Gravity Manipulation', 'Ice/Fire Powers', 'Disintegration', 'Frog Power'],
+        "points": [3,4,0,2,5,1]
     },
 };
 function onload() {
