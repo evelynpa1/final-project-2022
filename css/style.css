@@ -1,6 +1,10 @@
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+main {
+
+}
 #cover::before {
     background-image: url(../images/cover.png);
     /* background-size: cover; */
@@ -75,7 +79,7 @@ nav ul li::after, nav div::after{
 .active {
     background-color: rgb(0,0,0,.05);
 }
-.active a {
+.active a, main a {
     text-decoration: underline;
     text-underline-position: under;
 }
@@ -109,7 +113,7 @@ footer {
     color: white;
     text-align: center;
 }
-@media screen and (min-width:500px) {
+@media screen and (min-width:500px), print {
     main {
         min-height: calc(100vh - 327px - 20px - 40px - 56px);
     }
@@ -127,7 +131,7 @@ footer {
         width: auto;
     }
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width:900px){
     main {
         min-height: calc(100vh - 212px - 40px - 56px);
     }

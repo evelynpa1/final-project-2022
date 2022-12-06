@@ -78,8 +78,7 @@
         grid-column: 4;
     }
 }
-
-@media screen and (min-width:900px) {
+@media screen and (min-width:900px), print {
     .about-me {
         padding: 0px;
         grid-template-columns: repeat(40,1fr);
@@ -138,6 +137,30 @@
     }
     #layton-pic {
         grid-area: 39 / 32 / span 6 / span 6;
+    }
+}
+@media print {
+    .about-me * {
+        font-size: 12pt;
+        break-inside: avoid;
+    }
+    .about-me div {
+        box-shadow: none;
+        display:table;
+        border: solid 1px black;
+        background: white;
+    }
+    .about-me {
+        border: solid 2px black;
+    }
+    .about-me img {
+        border: solid 2px black;
+    }
+    footer {
+        background-color: black;
+    }
+    .about-me img:hover, .about-me img:focus-visible {
+        transform: scale(1);
     }
 }
 @media screen and (min-width:1300px) {

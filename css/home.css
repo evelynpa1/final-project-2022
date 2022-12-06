@@ -9,7 +9,6 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
     overflow: hidden;
 }
 #question_wrapper::before, #result_back::before {
@@ -77,6 +76,7 @@
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 .choice {
     background-color: white;
@@ -86,6 +86,7 @@
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 .choice:hover, .choice:focus-visible, .control_button:hover, .control_button:focus-visible{
     box-shadow: inset 0 0 3px rgba(0,0,0,.3);
@@ -131,7 +132,7 @@ div.disabled, div.disabled:hover {
     background-image: url("../images/gudetama.png");
 }
 /* flex-basis: calc(50% - 5px); */
-@media screen and (min-width:600px) {
+@media screen and (min-width:600px), print{
     main {
         margin-left: 50px;
         margin-right: 50px;
@@ -141,7 +142,7 @@ div.disabled, div.disabled:hover {
         min-height: 150px;
     }
     #question {
-        font-size: 100%;
+        font-size: 25pt;
         line-height: 50px;
     }
     .choice{
@@ -155,7 +156,16 @@ div.disabled, div.disabled:hover {
         font-size: 30px;
     }
 }
-@media screen and (min-width:1000px) {
+@media print {
+    .choice, .control_button, #form_wrapper{
+        border: solid 2px black;
+    }
+    #question {
+        font-size: 150%;
+        line-height: 50px;
+    }
+}
+@media screen and (min-width:1000px){
     main {
         margin-left: 200px;
         margin-right: 200px;

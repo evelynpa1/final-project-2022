@@ -79,7 +79,7 @@
     background-color: rgba(232,205,255,1);
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:600px), print{
     .tier{
         flex-direction: column;
         height: 220px;
@@ -91,6 +91,17 @@
         flex-basis: 100%;
         margin-bottom: 0px;
         margin-right: 5px;
+    }
+}
+@media print {
+    .tier {
+        break-inside: avoid;
+    }
+    .img-wrapper, .tier, #tier_list{
+        border: solid 2px black;
+    }
+    .letter {
+        border-right: solid 2px black;
     }
 }
 @media screen and (min-width:1000px) {
